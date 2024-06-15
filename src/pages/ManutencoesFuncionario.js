@@ -11,7 +11,7 @@ function ManutencoesFuncionario(){
     const [AllDataDosComputersEmManutencao,setAllDataDosComputersEmManutencao]=useState([])
     async function onLoadInfo(){
         try{
-            const response=await axios.get('http://localhost:4090/manutencoes-funcionario')
+            const response=await axios.get('http://195.35.37.40:4090/manutencoes-funcionario')
             console.log(response.data)
             setAllDataDosComputersEmManutencao(response.data)
         }catch(error){
@@ -29,7 +29,7 @@ function ManutencoesFuncionario(){
                 index:e.target.value
             }
          
-            const response=await axios.post('http://localhost:4090/editar-info-computador',index,{
+            const response=await axios.post('http://195.35.37.40:4090/editar-info-computador',index,{
                 headers:{
                     'Content-Type': 'application/json'
                 }
@@ -48,7 +48,7 @@ function ManutencoesFuncionario(){
     async function onClickDelete(e){
         try{
             
-            const response=await axios.delete('http://localhost:4090/deletar-computador/'+e.target.value)
+            const response=await axios.delete('http://195.35.37.40:4090/deletar-computador/'+e.target.value)
             onLoadInfo()
         }catch(error){
             console.log(error)

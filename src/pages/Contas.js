@@ -8,7 +8,7 @@ function Contas(){
     const [contasInfo,setContasInfo]=useState([])
     async function onLoadInfo(){
         try {
-            const response=await axios.get('http://localhost:4090/contas-cadastradas')
+            const response=await axios.get('http://195.35.37.40:4090/contas-cadastradas')
           
             setContasInfo(response.data)
             
@@ -35,7 +35,7 @@ function Contas(){
     async function handleSelect(e){
         console.log(e.target.value)
         try{
-            const response=await axios.post('http://localhost:4090/mudar-cargo/'+e.target.id)
+            const response=await axios.post('http://195.35.37.40:4090/mudar-cargo/'+e.target.id)
         }catch(error){
             console.log(error)
            

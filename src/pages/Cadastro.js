@@ -50,7 +50,7 @@ function Cadastro(){
                 alert("Preencha todos os campos")
             }else{
                 console.log("deu")
-            const response=await axios.post('http://localhost:4090/cadastro-info-user', userInfo,{
+            const response=await axios.post('http://195.35.37.40:4090/cadastro-info-user', userInfo,{
                 headers:{
                     'Content-Type': 'application/json'
                 }

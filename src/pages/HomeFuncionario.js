@@ -10,7 +10,7 @@ function HomeFuncionario(){
     const [nomeInfo,setNomeInfo]=useState("")
     async function onLoadInfo(){
         try{
-            const response=await axios.get('http://localhost:4090/home-funcionario')
+            const response=await axios.get('http://195.35.37.40:4090/home-funcionario')
             setNomeInfo(response.data.nome)
             console.log(nomeInfo)
 

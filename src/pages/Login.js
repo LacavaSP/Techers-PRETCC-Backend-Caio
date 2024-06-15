@@ -31,7 +31,7 @@ function Login(){
                 nome:nome,
                 senha:senha
             }
-            const response= await axios.get('http://localhost:4090', {
+            const response= await axios.get('http://195.35.37.40:4090', {
                 params:{
                     nome:nome,
                     senha:senha

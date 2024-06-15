@@ -23,7 +23,7 @@ function EditarInfoDoComputador(){
     async function onLoadInfo(){
    
       try{
-        const response=await axios.get('http://localhost:4090/editar-info-computador')
+        const response=await axios.get('http://195.35.37.40:4090/editar-info-computador')
         console.log(response.data)
         setComputadorASerEditado(response.data) 
         setInputNomeEditado(response.data.nomeCliente)
@@ -65,7 +65,7 @@ function EditarInfoDoComputador(){
       if(!inputNomeEditado || !inputProblemaEditado || !inputTelefoneEditado){
         alert("Preencha todos os campos")
       }else{
-         const response=await axios.post('http://localhost:4090/atualizar-infos/',computadorEditado,{
+         const response=await axios.post('http://195.35.37.40:4090/atualizar-infos/',computadorEditado,{
         headers:{
           'Content-Type': 'application/json'
         }

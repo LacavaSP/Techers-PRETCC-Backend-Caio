@@ -22,7 +22,7 @@ function EditarComputadorVendas(){
 
     async function onLoadInfo(){
         try{
-            const response=await axios.get('http://localhost:4090/pegar-info-para-editar')
+            const response=await axios.get('http://195.35.37.40:4090/pegar-info-para-editar')
             setInputAnuncio(response.data.titulo)
             setInputProcessador(response.data.processador)
             setInputPlacaMae(response.data.placa_mae)
@@ -106,7 +106,7 @@ function EditarComputadorVendas(){
             if(!inputAnuncio || !inputArmazenamento || !inputCooler || !inputFans || !inputFonte || !inputFonte || !inputGabinete || !inputPlacaMae || !inputPlacaVideo || !inputPreco || !inputProcessador || !inputRAM){
                 alert("Preencha todos os campos")
             }else{
-                 const response=await axios.post('http://localhost:4090/computador-editado',computadorEditado,{
+                 const response=await axios.post('http://195.35.37.40:4090/computador-editado',computadorEditado,{
                 headers:{
                     'Content-Type': 'application/json'
                 }

@@ -9,7 +9,7 @@ function ViewComputadorAVenda(){
     const [infoComputerVenda,setInfoComputerVenda]=useState('')
     async function onLoadInfo(){
         try {
-            const response=await axios.get('http://localhost:4090/pegar-infos-venda')
+            const response=await axios.get('http://195.35.37.40:4090/pegar-infos-venda')
             console.log(response.data)
             setInfoComputerVenda(response.data)
         } catch (error) {
@@ -23,7 +23,7 @@ function ViewComputadorAVenda(){
 
     async function handleExcluir(){
         try{
-            const response=await axios.delete('http://localhost:4090/excluir-venda')
+            const response=await axios.delete('http://195.35.37.40:4090/excluir-venda')
             navigate('/computadores-venda')
         }catch(error){
             console.log(error)

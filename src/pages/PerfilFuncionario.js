@@ -8,7 +8,7 @@ function PerfilFuncionario(){
     const [userInfos,setUserInfos]=useState("")
     async function onLoadInfo(){
         try{
-            const response=await axios.get('http://localhost:4090/perfil-info')
+            const response=await axios.get('http://195.35.37.40:4090/perfil-info')
             console.log(response.data)
             setUserInfos(response.data)
         }catch(error){

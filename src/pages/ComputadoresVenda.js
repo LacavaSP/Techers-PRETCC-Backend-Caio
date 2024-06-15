@@ -10,7 +10,7 @@ function ComputadoresVenda(){
     const navigate=useNavigate()
    async function onLoadInfo(){
     try{
-        const response=await axios.get('http://localhost:4090/listagem-computadoresAVenda')
+        const response=await axios.get('http://195.35.37.40:4090/listagem-computadoresAVenda')
         console.log(response.data)
         setComputadoresAVenda(response.data)
     }catch(error){
@@ -24,7 +24,7 @@ function ComputadoresVenda(){
     async function onClickDivVenda(e){
         console.log(e.target.id)
         try{
-            const response=await axios.post('http://localhost:4090/atualizar-index-computador-info/'+e.target.id)
+            const response=await axios.post('http://195.35.37.40:4090/atualizar-index-computador-info/'+e.target.id)
 
             navigate('/view-computador-a-venda')
         }catch(error){

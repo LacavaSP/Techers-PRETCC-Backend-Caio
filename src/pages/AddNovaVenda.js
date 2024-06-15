@@ -83,7 +83,7 @@ function AddNovaVenda(){
             if(!inputAnuncio || !inputArmazenamento || !inputCooler || !inputFans || !inputFonte || !inputFonte || !inputGabinete || !inputPlacaMae || !inputPlacaVideo || !inputPreco || !inputProcessador || !inputRAM){
                 alert("Preencha todos os campos")
             }else{
-                const response=await axios.post('http://localhost:4090/add-nova-venda',novoComputadorAVenda,{
+                const response=await axios.post('http://195.35.37.40:4090/add-nova-venda',novoComputadorAVenda,{
                 headers:{
                     'Content-Type': 'application/json'
                 }

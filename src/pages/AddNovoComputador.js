@@ -39,7 +39,7 @@ function AddNovoComputador(){
                     telefoneCliente:telefoneCliente,
                     problemaCliente:problemaCliente
                 }
-                const response=await axios.post('http://localhost:4090/add-novo-computador-para-manutencao',novoComputadorParaManutencao,{
+                const response=await axios.post('http://195.35.37.40:4090/add-novo-computador-para-manutencao',novoComputadorParaManutencao,{
                     headers:{
                         'Content-Type': 'application/json'
                     }
