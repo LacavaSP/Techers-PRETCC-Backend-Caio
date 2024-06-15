@@ -1,0 +1,105 @@
+*{
+    color: white;
+}
+.inputFile{
+
+    color: white;
+    border: 2px solid white;
+    padding: 7px;
+    width: 350px;
+    font-size: 17px;
+   
+    
+}
+::-webkit-file-upload-button{
+    height: 50px;
+    color: white;
+    font-size: 17px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(90, 82, 82);
+
+}
+.containerAllnewVenda{
+   
+    width: 202vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.labelDoInput{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 500px;
+   
+}
+.labelDoInput>p{
+    width: 200px;
+    font-weight: 500;
+}
+.containerVendas{
+ 
+    width: 750px;
+    height: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.inteiro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.metadeUm{
+   
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.labelDoInputFile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 600px;
+
+}
+#hrVendas{
+    width: 255%;
+}
+.botaoVendas{
+    margin-top: 10px;
+    background: transparent;
+    padding: 10px;
+    width: 430px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 12px 1px rgba(241, 239, 239);
+    font-size: 17px;
+    cursor: pointer;
+}
+.botaoVendas:hover{
+    background-color: rgba(179, 174, 174, 0.4);
+}
+.divPreco{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.divPreco>input{
+    width: 270px;
+}
+.divPreco>p{
+    font-weight: 500;
+}

@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.menuButtons{
+    height: 100vh;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+   
+    background-color: #eb2d2d;
+    box-shadow: 0 0 10px 5px #880505;
+}
+.bordasBrancas{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    width: 300px;
+}
+.MenuLink:hover{
+    border-bottom: 2px solid rgb(255, 254, 254);
+}
+.buttonMenu{
+    background:transparent;
+   
+    border: none;
+    height: fit-content;
+    width: fit-content;
+  
+    
+}
+.MenuLink{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 17px;
+}
+.navMenuFuncionarios{
+  
+}

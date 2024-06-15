@@ -1,0 +1,125 @@
+.AllManutencoesFuncionarioContent{
+    display: flex;
+
+    width: 201.5vh;
+}
+.ManutencoesFuncionarioContent{
+    width: 80%;
+    color: white;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+.ManutencoesFuncionarioContent>p{
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+.ManutencoesFuncionarioContent>h1{
+    margin-top: 25px;
+    font-size: 40px;
+}
+#botaoAdd{
+  margin-top: 150px;  
+}
+.divUnicaProBotaoAdd{
+    display: flex;
+    justify-content: start;
+
+    width: 130.5vh;
+
+}
+#botaoAdd{
+    background: transparent;
+    color:white;
+    border: 2px solid rgba(241, 9, 9);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 15px;
+}
+#botaoAdd:hover{
+    background-color: rgba(204, 20, 20, 0.9);
+    cursor: pointer;
+}
+#hrManutencoes{
+    margin-top: 25px;
+    width: 100%;
+    color: white;
+}
+.linkAdd{
+    text-decoration: none;
+    color:white
+}
+.ComputadoresEmManutencao{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 160vh;
+    height: 100%;
+
+}
+.pDoComputadorEmMAnutencao{
+    
+    box-sizing: border-box;
+    height: 320px;
+    width: 35vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   border-radius: 20px;
+  background-color: rgb(65, 56, 56);
+    box-shadow: 0 0 3px 2px white;
+    padding: 20px;
+    font-size: 17px;
+    color: rgb(255, 241, 241);
+    margin: 20px;
+    
+
+}
+#selectManutencoes{
+   background: transparent;
+   border-radius: 20px;
+   font-size: 14px;
+   padding: 10px;
+   color:white;
+   border: 2px solid white;
+   cursor: pointer;
+   appearance: none;
+   outline: none;
+}
+#selectManutencoes:focus {
+    border: 2px solid #9fa0a0;
+    outline: none;
+  }
+.optionOp{
+    color: black;
+}
+.suportepronav{
+    height: 100vh;
+    width: 400px;
+}
+nav{
+    position: fixed;
+}
+.attOrExcluir{
+ 
+    display: flex;
+    justify-content: space-around;
+}
+.attOrExcluir>button{
+    background: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 110px;
+    border: 2px solid rgb(230, 13, 13);
+    cursor: pointer;
+}
+.attOrExcluir>button:hover{
+    background-color: rgb(212, 50, 50);
+}
+.linkAttOrExcluir{
+    color: white;
+    text-decoration: none;
+}

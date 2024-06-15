@@ -1,0 +1,109 @@
+.suportepronav{
+    height: 100vh;
+    width: 400px;
+}
+.allContentOfTHIS{
+    display: flex;
+    width: 202.5vh;
+}
+.parteDoInputDePesquisaEAddComputers{
+    
+    height: 160px;
+    width: 160.5vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(221, 213, 213);
+}
+
+.inputEFotoBusca{
+  
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    width: 600px;
+    height: 60px;
+}
+.inputEFotoBusca>input{
+    margin-left: 20px;
+}
+.fotoBusca{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+.botaoNovVenda{
+    background: transparent;
+    padding: 10px;
+    width: 190px;
+    border-radius: 20px;
+    margin-right: 20px;
+    border: 2px solid black;
+
+}
+.botaoNovVenda:hover{
+    background-color: rgba(8, 8, 8, 0.8);
+    color: white;
+    cursor: pointer;
+}
+.mainContentOfThis{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.imgVendas{
+    width: 160vh;
+    height: 500px;
+}
+.listagemDeComputadores{
+    border-top: 2px solid white;
+    width: 160vh;
+    height: 100%;
+    display: flex;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+}
+.computadorAVenda{
+     cursor: pointer;
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+    width: 340px;
+    margin: 19px;
+    height: 440px;
+    background-color: rgb(10, 9, 9);
+    box-shadow: 0 0 6px 4px rgb(10, 9, 9);
+}
+.computadorAVenda>img{
+    border: 1px solid white;
+    width: 300px;
+    height: 160px;
+    padding: 10px;
+}
+.nomeDoComputer{
+    
+    text-align: justify;
+    font-weight: 500;
+    font-size: 17px;
+    max-width: 300px;
+    max-height: 67px;
+ 
+}
+#preco{
+    font-weight: 700;
+    font-size: 22px;
+    color: rgb(196, 129, 28);
+}
+.linkNovaVenda{
+    color: black;
+    text-decoration: none;
+}
+.linkNovaVenda:hover{
+    color: white;
+}
